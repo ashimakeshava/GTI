@@ -1,0 +1,44 @@
+\section{APPENDIX}
+
+\begin{figure}[h]
+    \centering
+    \subfloat[]{\includegraphics[width=0.5\linewidth]{source/figures/results/fixations_between_grasps.png}
+    \label{figure:fix_bw_grasp}} 
+    \subfloat[]{\includegraphics[width=0.4\linewidth]{source/figures/results/lookahead_distance_most_fixated.png}
+    \label{figure:most_fixated}}\\
+    \subfloat[]{\includegraphics[width=0.4\linewidth]{source/figures/results/lookahead_distance_duration_easy.png}
+    \label{figure:tla_easy}}
+    \subfloat[]{\includegraphics[width=0.4\linewidth]{source/figures/results/lookahead_distance_duration_hard.png}
+    \label{figure:tla_hard}}
+    \caption[]{\protect\subref{figure:fix_bw_grasp} shows the probability density of unique objects fixated on between consecutive grasps for the two trial types EASY (blue) and HARD (red). For both EASY and HARD trials, maximum probability density of fixation is on three unique objects in the scene. \protect\subref{figure:most_fixated} shows the probability density of the most fixated object in a grasp sequence. For both EASY and HARD trials, the maximum probability of density is on the object that is immediately grasped next, this shows that between two grasp onsets, maximum attention is allotted to the object that is next in line to be grasped. 
+    \protect\subref{figure:tla_easy}\protect\subref{figure:tla_hard} show the joint probability density of the dwelling time (total fixation duration) on an object between consecutive grasps and it's position in the relative grasp sequence for EASY and HARD trials respectively. The figure also shows the marginal probability density of the dwelling time  on an object and it's relative position in grasp sequence. The abscissa refers to the relative grasp sequence of a fixated object i.e., when the grasp sequence of a fixated object is 1 the object is grasped next or when the grasp sequence is 2 the fixated object is grasped one after the next grasp.  the The figure shows that the dwelling time is highest on the object that is immediately next in line to be grasped. The dwelling time reduces linearly on the objects that are upcoming in the relative grasp sequence. The differences in the EASY and HARD trials can be explained by the higher number of objects fixated on between grasps in the HARD trials as shown in \protect\subref{figure:fix_bw_grasp}
+    }
+    \label{figure:planning_behavior}
+\end{figure}
+
+
+\begin{figure}[h]
+    \centering
+    \subfloat[]{\includegraphics[width=0.3\linewidth]{source/figures/results/t50_easy_execution.png}
+    \label{figure:t50_easy_exe}}
+    \subfloat[]{\includegraphics[width=0.3\linewidth]{source/figures/results/t50_hard_execution.png}
+    \label{figure:t50_hard_exe}} \\
+    \caption[]{Cumulative distributions of time of first fixation on the 7 regions of interest for the action execution epochs. The dotted line indicates time required in 50\% of all epochs to first fixation on the ROIs. The time taken for first fixation on each ROI can be  used to determine the attention attraction power of a region of interest i.e. the time taken to saccade to the region of interest.\\
+    Panel \protect\subref{figure:t50_easy_exe} shows the cumulative plots for the 7 ROIs for the EASY trials. In 50\% of the action execution epochs the 7 ROIs are fixated on within half time of the epoch duration. At the 50\% mark, the curves indicate the latency of gaze shift from the current\_TO, other objects and shelves, closely followed by the previous target object and shelf (prev\_TO, prev\_TS), then to next target shelf (next\_TO), current target shelf (current\_TS) and next target object (next\_TO). This is indicative of attention equally distributed on the 6 ROIs and no selective preference for any one object or shelf in the task sequence during the later stages of action execution epoch.\\
+    Panel \protect\subref{figure:t50_hard_exe} shows the cumulative distribution of the time to first fixation on the 7 ROIs for HARD trials. In 50\% of the action execution epochs, a similar trend is seen as in the EASY trials.
+    }
+     \label{figure:t50_overall_exe}
+\end{figure}
+
+
+
+\begin{figure}[h]
+    \centering
+    \subfloat[]{\includegraphics[width=0.25\linewidth]{source/figures/results/t50_easy_planning.png}
+    \label{figure:t50_easy_plan}}
+    \subfloat[]{\includegraphics[width=0.25\linewidth]{source/figures/results/t50_hard_planning.png}\label{figure:t50_hard_plan}}
+    \caption[]{Cumulative distributions of time of first fixation on the 7 regions of interest for action planning epoch. The dotted line indicates time required in 50\% of epochs to first fixate the ROIs.
+    Panel \protect\subref{figure:t50_easy_plan} shows the cumulative plots for the 7 ROIs for the EASY trials. In 50\% of the epochs gaze is directed early to the previous target object and shelf. Further, gaze moves to other objects/shelves in the scene which is then followed by close fixations on next target object and shelf and lastly to the current target object well before the action on the object is executed. This is indicative of attention sequentially moving from one ROI to the next.
+    Panel \protect\subref{figure:t50_hard_plan} shows the cumulative distribution of the time to first fixation on the 7 ROIs for HARD trials. In 50\% of the grasp epochs, The latency of first fixations on the ROIs remains roughly similar to the action planning epochs of the EASY trials, where the early fixations are on the previous target object and shelf and the last on the current target object before being manipulated.}
+     \label{figure:t50_overall_plan}
+\end{figure}
