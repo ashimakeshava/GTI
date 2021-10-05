@@ -997,8 +997,8 @@ FUNCTION { format.names }
   numnames 'namesleft :=
     { namesleft #0 > }
     { nameptr #1 =
-        %NO: BAD ORDER: {"{" s nameptr "{ff~}{ll}{, jj}{, vv}" format.name$ * "}" * 't := }
-        %NO: BAD ORDER: {"{" s nameptr "{ff~}{ll}{, jj}{, vv}" format.name$ * "}" * 't := }
+        %NO: BAD ORDER: {"{" s nameptr "{f.~}{ll}{, jj}{, vv}" format.name$ * "}" * 't := }
+        %NO: BAD ORDER: {"{" s nameptr "{f.~}{ll}{, jj}{, vv}" format.name$ * "}" * 't := }
         {"\bibinfo{person}{" s nameptr "{ff }{vv }{ll}{, jj}" format.name$ * "}" * 't := }
         {"\bibinfo{person}{" s nameptr "{ff }{vv }{ll}{, jj}" format.name$ * "}" * 't := }
       if$
