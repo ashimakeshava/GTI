@@ -1,0 +1,31 @@
+% Using the linear mixed model, we assessed the significance of the three factors. There was a significant main effect of factor task (USE - LIFT) $\beta$ = 0.13  (95\%CI = [0.01, 0.25], t(27.28)=2.13) with a p-value = 0.04. The main effect of familiarity (UNFAMILIAR - FAMILIAR ) was not significant $\beta$ = 0.35  (95\%CI = [-0.06, 0.77], t(10.02)=1.67) with p-value = 0.12. The main effect of handle orientation (LEFT - RIGHT) was significant, $\beta$ = -1.74 (95\%CI = [-1.99, -1.48], t(28)=-13.65), p-value <0.001. We found a significant interaction of task and familiarity with $\beta$ = 0.25 (95\%CI = [0.09, 0.41], t(43.64)=3.13), p-value = 0.003. The interaction of task and handle orientation was not significant, $\beta$ = 0.11 (95\%CI = [-0.06, 0.28], t(31.90)=1.29), p-value = 0.20. Similarly, the interaction of familiarity and orientation was significant, $\beta$ = 0.33 (95\%CI = [0.15, 0.50]), p-value = 0.001. The 3-way interaction was also not significant, $\beta$ = -0.09 (95\%CI = [-0.39, 0.19], t(2201)=-0.65), p-value=0.51.
+% \begin{table}[t]
+% \centering
+% \small
+% \caption{\label{tab:regression_coefs} Regression coefficients of Linear Mixed Model}
+% \begin{tabular}{lrrrrrrrrr}
+% \toprule
+% Parameter &  Coefficient [95\% CI] &       t &  df &     p-value &  $\eta\textsuperscript{2}$  [90\% CI] \\
+% \midrule
+% \\
+% \textbf{Overall Effects} \\
+% \\
+% Task (USE - LIFT) &        0.099 [0.017 , 0.182] &   2.354 &    50.323 & \textbf{0.023} &         0.099 [0.008 ,0.244] \\
+% Familiarity (UNFAMILIAR - FAMILIAR) &        0.397 [0.330 , 0.465] &  11.523 &    89.139 & \textbf{<0.001} &         0.598 [0.494 ,0.677] \\
+% Handle Orientation (LEFT - RIGHT) &       -0.854 [-1.014 , -0.695] & -10.521 &    45.752 & \textbf{<0.001} &         0.708 [0.586 ,0.785] \\
+% Task:Familiarity &        0.164 [0.037 , 0.291] &   2.526 &   184.174 & \textbf{0.012} &         0.033 [0.004 ,0.087] \\
+% Familiarity:Handle Orientation &        0.048 [-0.102 , 0.198] &   0.631 &    51.029 & 0.531 &         0.008 [0.000 ,0.091] \\
+% Task:Handle Orientation &        0.151 [0.011 , 0.291] &   2.109 &    71.322 & \textbf{0.038} &         0.059 [0.002 ,0.166] \\
+% \midrule 
+% \\
+% \textbf{Difference between experimental groups} \\
+% \\
+% Task &       -0.094 [-0.259 , 0.071] &  -1.119 &    50.323 & 0.268 &         0.024 [0.000 ,0.132] \\
+% Familiarity &       -0.191 [-0.327 , -0.056] &  -2.776 &    89.139 & \textbf{0.007} &         0.080 [0.013 ,0.182] \\
+% Handle Orientation &       -1.624 [-1.943 , -1.306] & -10.002 &    45.752 & \textbf{<0.001} &         0.686 [0.557 ,0.769] \\
+% Task:Familiarity &        0.037 [-0.218 , 0.291] &   0.282 &   184.174 & 0.778 &         0.000 [0.000 ,0.016] \\
+% Familiarity:Handle Orientation &        0.495 [0.195 , 0.795] &   3.239 &    51.029 & \textbf{0.002} &         0.171 [0.042 ,0.324] \\
+% Task:Handle Orientation &        0.037 [-0.244 , 0.317] &   0.256 &    71.322 & 0.799 &         0.001 [0.000 ,0.038] \\
+% \bottomrule
+% \end{tabular}
+% \end{table}
